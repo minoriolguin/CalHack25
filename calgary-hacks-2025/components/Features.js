@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Features() {
+function Features() {
   const features = [
     {
       icon: "",
@@ -28,7 +28,7 @@ export default function Features() {
               <div key={index} className="w-[33%] max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col grow items-center px-9 pb-3 w-full text-center text-black max-md:px-5 max-md:mt-8">
                   <Image
-                    src={feature.icon}
+                    src="file.svg"
                     alt={feature.title}
                     width={64}
                     height={64}
@@ -48,4 +48,4 @@ export default function Features() {
       </div>
     </div>
   );
-}
+} export default Features;

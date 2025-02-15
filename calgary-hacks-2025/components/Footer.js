@@ -20,7 +20,9 @@ export default function Footer() {
                       key={social}
                       className="flex overflow-hidden justify-center items-center min-h-4"
                     >
-                      <Image />
+                      <Image 
+                      src="file.svg"
+                      />
                     </div>
                   ))}
                 </div>
