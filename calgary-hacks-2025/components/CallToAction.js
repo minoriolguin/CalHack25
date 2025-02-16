@@ -1,4 +1,7 @@
-export default function CallToAction() {
+import React from "react";
+import Link from "next/link";
+
+function CallToAction() {
   return (
     <div className="flex flex-col justify-center px-20 py-16 w-full text-base text-center text-black bg-orange-600 max-md:px-5 max-md:max-w-full">
       <div className="flex flex-col items-center px-20 max-md:px-5 max-md:max-w-full">
@@ -10,11 +13,14 @@ export default function CallToAction() {
             Join thousands of food enthusiasts learning from the best chefs in
             your city
           </div>
+          <Link href="/pricing">
           <button className="px-8 py-4 mt-10 max-w-full text-black bg-white rounded-full w-[200px] max-md:px-5">
             Get Started Today
           </button>
+          </Link>
         </div>
       </div>
     </div>
   );
 }
+export default CallToAction;
