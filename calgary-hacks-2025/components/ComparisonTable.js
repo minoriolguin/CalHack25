@@ -25,6 +25,7 @@ const ComparisonTable = () => {
         </div>
 
         {/* Table Rows */}
+        <div className="text-black">
         {features.map((feature, index) => (
           <div key={index} className="grid grid-cols-4 text-center border-b py-4 bg-white">
             <div className="px-4 font-medium">{feature.name}</div>
@@ -35,6 +36,7 @@ const ComparisonTable = () => {
             <div className="px-4">{feature.master}</div>
           </div>
         ))}
+        </div>
       </div>
     </div>
   );
