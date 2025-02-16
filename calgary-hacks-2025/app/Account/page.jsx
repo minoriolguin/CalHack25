@@ -7,7 +7,7 @@ import UpcomingReservations from "../../components/UpcomingReservations";
 
 function Dashboard() {
   return (
-    <>
+    <div className="min-h-screen">
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
@@ -20,7 +20,7 @@ function Dashboard() {
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
       />
-      <div className="flex overflow-hidden flex-col mx-auto my-0 w-full bg-white rounded-lg border-2 border-gray-300 border-solid max-w-[1440px]">
+      <div className="flex min-h-screen overflow-hidden flex-col mx-auto my-0 w-full bg-white rounded-lg border-2 border-gray-300 border-solid max-w-[1440px]">
         <div className="flex flex-col w-full bg-transparent">
           <div className="flex flex-col w-full bg-gray-50">
             <div className="flex w-full">
@@ -56,7 +56,7 @@ function Dashboard() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
