@@ -1,4 +1,5 @@
 import React from "react";
+import { FaBus, FaCheck, FaParking, FaWalking } from "react-icons/fa"; // Import necessary icons
 
 const preparationSteps = [
   "Wear comfortable clothes and closed-toe shoes",
@@ -8,12 +9,9 @@ const preparationSteps = [
 ];
 
 const transportationInfo = [
-  {
-    icon: "ti ti-parking",
-    text: "Free parking available in the building garage",
-  },
-  { icon: "ti ti-walk", text: "5 minutes walk from Central Station" },
-  { icon: "ti ti-bus", text: "Bus lines 10, 24, and 35 stop nearby" },
+  { icon: FaParking, text: "Free parking available in the building garage" },
+  { icon: FaWalking, text: "5 minutes walk from Central Station" },
+  { icon: FaBus, text: "Bus lines 10, 24, and 35 stop nearby" },
 ];
 
 const PreparationInfo = () => {
@@ -25,7 +23,7 @@ const PreparationInfo = () => {
           <ul>
             {preparationSteps.map((step, index) => (
               <li key={index} className="flex gap-3 items-center mb-4">
-                <i className="ti ti-check text-black" aria-hidden="true" />
+                <FaCheck className="text-orange-500 w-5 h-5" /> {/* Orange checkmark */}
                 <span>{step}</span>
               </li>
             ))}
@@ -34,12 +32,15 @@ const PreparationInfo = () => {
         <div>
           <h2 className="mb-8 text-3xl font-bold">How to Get There</h2>
           <ul>
-            {transportationInfo.map((info, index) => (
-              <li key={index} className="flex gap-3 items-center mb-4">
-                <i className={`${info.icon} text-black`} aria-hidden="true" />
-                <span>{info.text}</span>
-              </li>
-            ))}
+            {transportationInfo.map((info, index) => {
+              const IconComponent = info.icon; // Get the correct icon
+              return (
+                <li key={index} className="flex gap-3 items-center mb-4">
+                  <IconComponent className="text-orange-500 w-5 h-5" /> {/* Orange transportation icons */}
+                  <span>{info.text}</span>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
