@@ -8,7 +8,7 @@ export const FeaturedSection = () => (
         <FeaturedContent index={1} 
         image="/pizza.jpg"
         user="chef_julia"
-        profilePic=""
+        profilePic="/pfp.jpg"
         timeAgo="2h ago"
         caption="Made this amazing pizza today! 🍝✨ #homemade"
         likes={128}
@@ -21,7 +21,7 @@ export const FeaturedSection = () => (
           <FeaturedContent index={2}
           image="/bowl.jpg"
           user="Timcooks"
-          profilePic=""
+          profilePic="/pfp2.jpg"
           timeAgo="1h ago"
           caption="Nutriuos Smoothie Bowl for breakfast!"
           likes={128}
