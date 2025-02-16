@@ -1,12 +1,37 @@
 import React from "react";
 
-import Header from "@/components/Header";
-import SearchBar from "@/components/SearchBar";
-import FilterButton from "@/components/FilterButtonNearbyClasses";
-import ClassCard from "@/components/ClassCard";
-import NearbyClasses from "@/components/NearbyClasses";
+import Footer from "@/components/Footer";
+import ClassCardExplore from "../../components/ClassCardExplore";
+import FilterTags from "../../components/FilterTags";
+import Header from "../../components/Header";
+import MapView from "../../components/MapView";
+import SearchBar from "../../components/SearchBar";
 
 function CookingClassesPage() {
+
+  const classData = [
+    {
+      title: "Italian Pasta Making",
+      rating: "4.8",
+      reviews: "124",
+      type: "In-Person",
+      description:
+        "Learn authentic pasta making techniques from our expert chef.",
+      location: "Downtown Calgary, AB",
+      tags: ["Vegetarian", "Hands-on"],
+    },
+    {
+      title: "French Pastry Basics",
+      rating: "4.9",
+      reviews: "89",
+      type: "Online",
+      description:
+        "Master the art of French pastry making from your home kitchen.",
+      location: "Live Online Class",
+      tags: ["Kit Included", "Beginner"],
+    },
+  ];
+  
   return (
     <div className="flex overflow-hidden flex-col bg-white rounded-lg border-2 border-gray-300 border-solid">
       <div className="flex flex-col w-full bg-black bg-opacity-0 max-md:max-w-full">
@@ -32,6 +57,7 @@ function CookingClassesPage() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
