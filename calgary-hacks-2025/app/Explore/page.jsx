@@ -5,6 +5,7 @@ import FilterButton from "@/components/FilterButtonNearbyClasses";
 import ClassCard from "@/components/ClassCard";
 import NearbyClasses from "@/components/NearbyClasses";
 
+
 function CookingClassesPage() {
   const filters = [
     { name: "Cuisine Type" },
