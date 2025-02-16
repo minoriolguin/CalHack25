@@ -4,7 +4,6 @@ import Header from "../../components/Header";
 import TopCreations from "../../components/TopCreations";
 import FilterButtons from "../../components/FilterButtons";
 import FeaturedSection from "../../components/FeaturedSection";
-import Footer from "@/components/Footer";
 
 function CommunityPage() {
     return (
@@ -15,7 +14,6 @@ function CommunityPage() {
                     <TopCreations />
                     <FilterButtons />
                     <FeaturedSection />
-                    <Footer />
                 </div>
             </div>
         </div>

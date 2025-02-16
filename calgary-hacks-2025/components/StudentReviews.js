@@ -4,13 +4,13 @@ import ReviewCard from "./ReviewCard";
 const reviews = [
   {
     name: "Sarah Johnson",
-    image: "/pfp.jpg",
+    image: "https://placehold.co/48x48/4A5568/4A5568",
     content:
       "Amazing experience! Chef Marco is incredibly knowledgeable and patient. I learned so much about pasta making and Italian cuisine.",
   },
   {
     name: "Michael Chen",
-    image: "/pfp2.jpg",
+    image: "https://placehold.co/48x48/4A5568/4A5568",
     content:
       "Worth every penny! The small class size ensures personal attention, and the techniques taught are invaluable.",
   },

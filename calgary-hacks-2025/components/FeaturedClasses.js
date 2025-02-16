@@ -1,5 +1,4 @@
 import ClassCard from "./ClassCard";
-import Link from "next/link";
 
 export default function FeaturedClasses() {
   const classes = [
@@ -20,7 +19,7 @@ export default function FeaturedClasses() {
     },
     {
       image:
-        "",
+      "",
       price: "89",
       rating: "4.8",
       reviews: "38",
@@ -29,13 +28,13 @@ export default function FeaturedClasses() {
       instructor: {
         name: "Chef Tanaka",
         image:
-          "",
-      },
+        "",
+        },
       duration: "3h",
     },
     {
       image:
-        "",
+      "",      
       price: "95",
       rating: "4.9",
       reviews: "56",
@@ -44,8 +43,8 @@ export default function FeaturedClasses() {
       instructor: {
         name: "Chef Pierre",
         image:
-          "",
-      },
+        "",
+            },
       duration: "4h",
     },
   ];
@@ -57,16 +56,13 @@ export default function FeaturedClasses() {
           Featured Classes
         </div>
         <div className="p-0.5 mt-11 max-md:mt-10 max-md:max-w-full">
-          <Link href='/classpage' className='w-block full'>
-            <div className="flex gap-5 max-md:flex-col">
-              {classes.map((classItem, index) => (
-                <div key={index} className="w-[33%] max-md:ml-0 max-md:w-full">
-                  <ClassCard {...classItem} />
-                </div>
-              ))}
-            </div>
-          </Link>
-
+          <div className="flex gap-5 max-md:flex-col">
+            {classes.map((classItem, index) => (
+              <div key={index} className="w-[33%] max-md:ml-0 max-md:w-full">
+                <ClassCard {...classItem} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

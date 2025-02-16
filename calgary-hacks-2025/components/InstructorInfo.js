@@ -6,8 +6,9 @@ const InstructorInfo = () => {
       <h3 className="mb-4 text-xl font-bold">Your Instructor</h3>
       <div className="flex gap-4 mb-4">
         <img
-          src="/maria.jpg"
-          alt="Chef Maria Rossi"
+          src="https://placehold.co/64x64/4A5568/4A5568"
+          fill
+          alt="Chef Marco Rossi"
           className="w-16 h-16 rounded-full"
         />
         <div>
