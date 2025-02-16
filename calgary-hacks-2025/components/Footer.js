@@ -22,6 +22,8 @@ export default function Footer() {
                     >
                       <Image 
                       src="file.svg"
+                      width={18}
+                      height={18}
                       />
                     </div>
                   ))}

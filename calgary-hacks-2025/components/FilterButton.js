@@ -8,7 +8,9 @@ const FilterButton = ({ label, icon }) => {
         <div className="flex overflow-hidden relative flex-col justify-center items-start px-1.5 py-1.5 aspect-square w-[26px]">
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/4279b0c81b1e7d76171a910974fc265cbdd4320b64c5eef8b3a78ff673f7b45d?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790"
+            src="file.svg"
+            width={18}
+            height={18}
             alt=""
             className="object-cover absolute inset-0 size-full"
           />
@@ -16,6 +18,7 @@ const FilterButton = ({ label, icon }) => {
             <img
               loading="lazy"
               src={icon}
+              fill
               alt=""
               className="object-contain self-stretch my-auto w-4 aspect-square"
             />

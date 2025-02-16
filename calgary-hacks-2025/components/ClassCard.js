@@ -17,7 +17,8 @@ export default function ClassCard({
           <Image
             src="file.svg"
             alt={title}
-            fill
+            width={18}
+            height={18}
             className="object-cover absolute inset-0"
           />
           <div className="relative px-3.5 py-2 mb-0 bg-white rounded-full">
