@@ -1,4 +1,3 @@
-
 function Logo() {
   return (
     <div className="flex gap-2 items-center">
@@ -7,7 +6,7 @@ function Logo() {
         alt="PrepPal logo"
         className="w-8 h-9"
       />
-      <div className="text-2xl font-bold text-black">PrepPal</div>
+      <div className="text-2xl font-bold text-black">FreshStart Kitchen</div>
     </div>
   );
 }

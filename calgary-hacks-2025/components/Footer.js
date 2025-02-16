@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="w-3/12 max-md:ml-0 max-md:w-full">
               <div className="flex flex-col items-start pt-0.5 pb-9 mx-auto w-full max-md:mt-8">
                 <div className="text-xl font-bold leading-none text-white">
-                  CookClass
+                  FreshStart Kitchen
                 </div>
                 <div className="mt-8 text-base leading-4 text-white">
                   Discover the joy of cooking with expert-led classes near you.
@@ -20,11 +20,11 @@ export default function Footer() {
                       key={social}
                       className="flex overflow-hidden justify-center items-center min-h-4"
                     >
-                      <Image 
-                      src="file.svg"
-                      alt="Rating star"
-                      width={18}
-                      height={18}
+                      <Image
+                        src="file.svg"
+                        alt="Rating star"
+                        width={18}
+                        height={18}
                       />
                     </div>
                   ))}
@@ -61,7 +61,9 @@ export default function Footer() {
                     {section.links.map((link, linkIndex) => (
                       <div
                         key={link}
-                        className={`pt-0.5 pb-2.5 ${linkIndex > 0 ? "mt-2" : ""} whitespace-nowrap max-md:pr-5`}
+                        className={`pt-0.5 pb-2.5 ${
+                          linkIndex > 0 ? "mt-2" : ""
+                        } whitespace-nowrap max-md:pr-5`}
                       >
                         {link}
                       </div>
@@ -73,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="px-16 pt-9 pb-2 mt-12 text-base leading-none text-center text-white max-md:px-5 max-md:mt-10 max-md:max-w-full">
-          © 2025 CookClass. All rights reserved.
+          © 2025 FreshStart Kitchen. All rights reserved.
         </div>
       </div>
     </div>
