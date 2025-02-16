@@ -1,24 +1,24 @@
 import React from "react";
 
 function ItalianPastaMakingModal() {
-  const handleClose = () => {
-    // Implement close functionality
-  };
+  // const handleClose = () => {
+  //   // Implement close functionality
+  // };
 
-  const handleConfirm = () => {
-    // Implement confirmation functionality
-  };
+  // const handleConfirm = () => {
+  //   // Implement confirmation functionality
+  // };
 
-  const handleCancel = () => {
-    // Implement cancellation functionality
-  };
+  // const handleCancel = () => {
+  //   // Implement cancellation functionality
+  // };
 
   return (
     <div className="flex justify-center items-center p-5 min-h-screen bg-black bg-opacity-50">
       <div className="relative p-8 w-full bg-white rounded-2xl max-w-[480px] max-sm:p-5">
         <button
           className="absolute top-4 right-4 p-0 cursor-pointer border-[none]"
-          onClick={handleClose}
+          // onClick={handleClose}
           aria-label="Close"
         >
           <i className="ti ti-x text-xl text-black" aria-hidden="true" />
@@ -70,13 +70,13 @@ function ItalianPastaMakingModal() {
         <div className="flex flex-col gap-3 mt-6">
           <button
             className="px-12 py-3.5 text-base font-medium text-center text-white bg-orange-500 rounded-lg cursor-pointer border-[none] max-sm:px-5 max-sm:py-3.5"
-            onClick={handleConfirm}
+            // onClick={handleConfirm}
           >
             Confirm Reservation
           </button>
           <button
             className="px-12 py-3.5 text-base font-medium text-center text-black rounded-lg cursor-pointer border-[none] max-sm:px-5 max-sm:py-3.5"
-            onClick={handleCancel}
+            // onClick={handleCancel}
           >
             Cancel
           </button>

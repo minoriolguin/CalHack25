@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import FilterButtons from "@/components/FilterButtons";
 import ClassCard from "@/components/MyClassCard";

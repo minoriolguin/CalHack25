@@ -28,21 +28,31 @@ export default function Header() {
               </div>
             </Link>
             <div className="flex gap-6 text-base text-black">
-              <button type="home" onClick={() => router.push("/")}>
-                Home
-              </button>
-              <button type="explore" onClick={() => router.push("/Explore")}>
-                Explore
-              </button>
-              <button
-                type="community"
-                onClick={() => router.push("/community")}
-              >
-                Community
-              </button>
-              <button type="pricing" onClick={() => router.push("/pricing")}>
-                Pricing
-              </button>
+
+              <Link href="/">
+                <button type="home">
+                  Home
+                </button>
+              </Link>
+
+              <Link href="/explore">
+                <button type="explore">
+                  Explore
+                </button>
+              </Link>
+
+              <Link href="/community">
+                <button type="community">
+                  Community
+                </button>
+              </Link>
+
+              <Link href="/pricing">
+                <button type="pricing">
+                  Pricing
+                </button>
+              </Link>
+              
             </div>
           </div>
           <Link href="/signin" className="flex align-center">
