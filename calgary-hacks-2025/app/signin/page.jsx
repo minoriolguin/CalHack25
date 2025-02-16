@@ -1,6 +1,7 @@
-import FormInput from '../../components/FormInput';
-import Logo from '../../components/Logo';
-import SocialButton from '../../components/SocialButton';
+import FormInput from "../../components/FormInput";
+import Logo from "../../components/Logo";
+import SocialButton from "../../components/SocialButton";
+import Link from "next/link";
 
 const socialButtons = [
   { provider: 'Google', image: 'https://cdn.builder.io/api/v1/image/assets/TEMP/7de37a022fac1dc37386cefcb731575aa63f035d50d63d3aa3e2728ec94126fa?apiKey=b1f199f6c1e049649af563ee72ea1823&' },
@@ -10,6 +11,9 @@ const socialButtons = [
 function PrepPalSignIn() {
   return (
     <div className="flex min-h-screen bg-gray-50 max-md:flex-col">
+      <Link href="/" className="text-orange">
+        Back to home
+      </Link>
       <div className="flex justify-center items-center px-20 py-20 w-6/12 max-md:px-5 max-md:py-10 max-md:w-full">
         <div className="p-5 w-full bg-white rounded-2xl max-w-[500px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] max-md:mx-auto max-md:my-0">
           <img
