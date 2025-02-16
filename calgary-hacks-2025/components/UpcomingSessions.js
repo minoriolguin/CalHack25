@@ -18,7 +18,7 @@ const UpcomingSessions = () => {
             <p className="mb-2.5 font-semibold">{session.date}</p>
             <p>{session.time}</p>
           </div>
-          <button className="px-4 py-2.5 text-white bg-orange-500 rounded-lg cursor-pointer border-[none] max-sm:w-full">
+          <button className="px-4 py-2.5 text-black bg-orange-500 rounded-lg cursor-pointer border-[none] max-sm:w-full">
             Book Now
           </button>
         </div>
