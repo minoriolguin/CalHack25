@@ -77,7 +77,10 @@ function PrepPalSignIn() {
                   id="remember"
                   className="w-4 h-4 rounded border border-black border-solid"
                 />
-                <label htmlFor="remember" className="text-sm font-medium text-black">
+                <label
+                  htmlFor="remember"
+                  className="text-sm font-medium text-black"
+                >
                   Remember me
                 </label>
               </div>
