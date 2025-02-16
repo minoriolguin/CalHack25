@@ -32,6 +32,7 @@ function CookingClassesPage() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
