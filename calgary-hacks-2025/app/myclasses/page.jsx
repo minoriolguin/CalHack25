@@ -1,36 +1,33 @@
 import React from "react";
-import ClassCard from "../components/MyClassCard";
-import FilterButton from "../components/FilterButton";
-
-const classData = [
-  {
-    imageUrl:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/91ae1ac8fb7ac9acaf3bc74af2944e89d4cd2d937d7ee7b95909ea1e9bec9b43?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790",
-    status: "Confirmed",
-    title: "Italian Pasta Masterclass",
-    date: "March 15, 2025 • 2:00 PM",
-    instructor: "Chef Maria Rodriguez",
-  },
-  {
-    imageUrl:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/a28205d38ee0a419909cbedc4280c4152c8b8addb2e4066045c6224370ef13b0?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790",
-    status: "Confirmed",
-    title: "Weekly Meal Prep Basics",
-    date: "March 20, 2025 • 10:00 AM",
-    instructor: "Chef John Smith",
-  },
-  {
-    imageUrl:
-      "https://cdn.builder.io/api/v1/image/assets/TEMP/8923af7a5323f6687dbf337f14bbeabe74ce743b74b8e1cbcdbc8edfcb646925?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790",
-    status: "Waitlist",
-    title: "Sushi Making Workshop",
-    date: "March 25, 2025 • 6:00 PM",
-    instructor: "Chef Lisa Chen",
-    waitlistPosition: 2,
-  },
-];
+import FilterButtons from "@/components/FilterButtons";
+import ClassCard from "@/components/MyClassCard";
 
 function MyClasses() {
+  const classData = [
+    {
+      imageUrl:"/italianclass.jpg",
+      status: "Confirmed",
+      title: "Italian Pasta Masterclass",
+      date: "March 15, 2025 • 2:00 PM",
+      instructor: "Chef Maria Rodriguez",
+    },
+    {
+      imageUrl:
+        "/meal.jpg",
+      status: "Confirmed",
+      title: "Weekly Meal Prep Basics",
+      date: "March 20, 2025 • 10:00 AM",
+      instructor: "Chef John Smith",
+    },
+    {
+      imageUrl: "/sushim.jpg",
+      status: "Waitlist",
+      title: "Sushi Making Workshop",
+      date: "March 25, 2025 • 6:00 PM",
+      instructor: "Chef Lisa Chen",
+      waitlistPosition: 2,
+    },
+  ];
   return (
     <div className="flex flex-col bg-black bg-opacity-0">
       <div className="flex flex-col px-20 pt-6 pb-36 w-full bg-gray-50 max-md:px-5 max-md:pb-24 max-md:max-w-full">
@@ -42,15 +39,15 @@ function MyClasses() {
         </div>
         <div className="flex flex-col mt-8 mb-0 w-full bg-black bg-opacity-0 max-md:mb-2.5 max-md:max-w-full">
           <div className="flex flex-wrap gap-4 pr-20 bg-black bg-opacity-0 max-md:pr-5 max-md:mr-0.5">
-            <FilterButton
+            <FilterButtons
               label="All Class Types"
               icon="https://cdn.builder.io/api/v1/image/assets/TEMP/ca83ee75207842e3223c65cbd00b9e0eac887eeffca04b9aae14040b1562840a?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790"
             />
-            <FilterButton
+            <FilterButtons
               label="All Instructors"
               icon="https://cdn.builder.io/api/v1/image/assets/TEMP/ca83ee75207842e3223c65cbd00b9e0eac887eeffca04b9aae14040b1562840a?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790"
             />
-            <FilterButton
+            <FilterButtons
               label="Sort by Date"
               icon="https://cdn.builder.io/api/v1/image/assets/TEMP/ca83ee75207842e3223c65cbd00b9e0eac887eeffca04b9aae14040b1562840a?placeholderIfAbsent=true&apiKey=4442b66ff9294909b9127464de535790"
             />
