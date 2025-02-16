@@ -10,7 +10,7 @@ const ComparisonTable = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center px-6 py-12 bg-white">
+    <div className="flex flex-col items-center justify-center px-6 py-12 bg-white text-black">
       {/* Title */}
       <h2 className="text-3xl font-bold text-center text-black mb-8">Compare Plan Features</h2>
 

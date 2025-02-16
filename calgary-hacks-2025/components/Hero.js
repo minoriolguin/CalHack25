@@ -18,7 +18,7 @@ export default function Hero() {
                   inner chef
                 </div>
                 <div className="flex flex-wrap gap-4 pr-20 mt-12 text-base text-center max-md:pr-5 max-md:mt-10">
-                  <Link href="/explore">
+                  <Link href="/Explore">
                     <button className="px-9 py-5 text-black bg-orange-600 rounded-full max-md:px-5">
                       Explore Classes
                     </button>

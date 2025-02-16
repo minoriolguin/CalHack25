@@ -31,7 +31,7 @@ export default function Header() {
               <button type="home" onClick={() => router.push('/')}>
                 Home
               </button>
-              <button type="explore" onClick={() => router.push('/explore')}>
+              <button type="explore" onClick={() => router.push('/Explore')}>
                 Explore
               </button>
               <button
